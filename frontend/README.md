@@ -166,13 +166,17 @@ The contact form uses EmailJS for client-side email sending. This allows the web
 
 ## 🚀 Deployment
 
-This project is optimized for static hosting platforms:
+This project is optimized for static hosting platforms. For detailed deployment instructions with custom domain setup, see the [**Complete Netlify Deployment Guide**](./NETLIFY_DEPLOYMENT_GUIDE.md).
 
-### Netlify (Recommended)
+### Quick Deploy Options:
+
+#### Netlify (Recommended)
 ```bash
 npm run build
 # Deploy the dist/ folder to Netlify
 ```
+
+The project includes a `netlify.toml` configuration file for optimal deployment with proper redirects and caching.
 
 ### Other Platforms
 - **GitHub Pages**: Enable GitHub Pages and deploy the build output

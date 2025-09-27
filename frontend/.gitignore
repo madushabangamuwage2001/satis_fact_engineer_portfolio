@@ -108,6 +108,7 @@ temp/
 .svelte-kit
 
 # Local Netlify folder
+.netlify/
 .netlify
 
 # Firebase
