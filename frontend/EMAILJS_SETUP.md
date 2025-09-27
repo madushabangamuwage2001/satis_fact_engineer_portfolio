@@ -79,10 +79,10 @@ const EMAILJS_CONFIG = {
 
 Your frontend is now ready for deployment to any static hosting platform:
 
-- **Vercel**: Already configured with `vercel.json`
 - **Netlify**: Just drag and drop the `dist` folder after running `npm run build`
 - **GitHub Pages**: Push to a repository and enable GitHub Pages
 - **Firebase Hosting**: Use Firebase CLI to deploy
+- **Surge.sh**: Simple command-line deployment
 
 ## Free Tier Limits
 
