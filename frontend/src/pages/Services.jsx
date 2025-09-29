@@ -3,6 +3,42 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Import service images
+import masonryTiling from "../assets/Masonry & Tiling.jpg";
+import plumbingWaterproofing from "../assets/Plumbing & Waterproofing.jpg";
+import carpentryRoofing from "../assets/Carpentry & Roofing.avif";
+import paintingServices from "../assets/Painting Services.jpg";
+import electricalWork from "../assets/Electrical Work.webp";
+import airConditioning from "../assets/Air Conditioning.png";
+import handymanServices from "../assets/Handyman Services.jpeg";
+import projectManagement from "../assets/Project Management.jpg";
+import serviceHero from "../assets/service.jpg";
+import storyFallback from "../assets/story.jpeg";
+
+// Import project gallery images
+import p11 from "../assets/p11.jpg";
+import p12 from "../assets/p12.jpg";
+import p13 from "../assets/p13.jpg";
+import p14 from "../assets/p14.jpg";
+import p15 from "../assets/p15.jpg";
+import p16 from "../assets/p16.jpg";
+import p17 from "../assets/p17.jpg";
+import p18 from "../assets/p18.jpg";
+import p21 from "../assets/p21.jpg";
+import p22 from "../assets/p22.jpg";
+import p23 from "../assets/p23.jpg";
+import p24 from "../assets/p24.jpg";
+import p25 from "../assets/p25.jpg";
+import p26 from "../assets/p26.jpg";
+import p27 from "../assets/p27.jpg";
+import p28 from "../assets/p28.jpg";
+import p30 from "../assets/p30.jpg";
+import p31 from "../assets/p31.jpg";
+import p32 from "../assets/p32.jpg";
+import p33 from "../assets/p33.jpg";
+import p34 from "../assets/p34.jpg";
+import p35 from "../assets/p35.jpg";
+
 const Services = () => {
   const [flippedCard, setFlippedCard] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState({});
@@ -12,7 +48,7 @@ const Services = () => {
       id: 1,
       title: "Masonry & Tiling",
       icon: "fas fa-hammer",
-      image: "/src/assets/Masonry & Tiling.jpg",
+      image: masonryTiling,
       shortDesc: "Professional masonry work and premium tiling solutions",
       fullDesc:
         "Expert masonry services including brickwork, stonework, and premium tiling solutions. We use high-quality materials and proven techniques to ensure durability and aesthetic appeal. Our services include titanium flooring, ceramic tiling, and decorative stonework.",
@@ -27,7 +63,7 @@ const Services = () => {
       id: 2,
       title: "Plumbing",
       icon: "fas fa-wrench",
-      image: "/src/assets/Plumbing & Waterproofing.jpg",
+      image: plumbingWaterproofing,
       shortDesc: "Complete plumbing solutions and waterproofing services",
       fullDesc:
         "Comprehensive plumbing services from installation to maintenance, plus professional waterproofing solutions. We handle everything from basic repairs to complete system installations, ensuring reliable water supply and effective drainage.",
@@ -42,7 +78,7 @@ const Services = () => {
       id: 3,
       title: "Carpentry & Roofing",
       icon: "fas fa-home",
-      image: "/src/assets/Carpentry & Roofing.avif",
+      image: carpentryRoofing,
       shortDesc: "Custom carpentry work and professional roofing services",
       fullDesc:
         "Skilled carpentry services including custom furniture, built-in storage solutions, and professional roofing services. We work with various materials to create functional and beautiful wooden structures that last.",
@@ -57,7 +93,7 @@ const Services = () => {
       id: 4,
       title: "Painting Services",
       icon: "fas fa-paint-brush",
-      image: "/src/assets/Painting Services.jpg",
+      image: paintingServices,
       shortDesc: "Professional painting and color washing services",
       fullDesc:
         "Complete painting services including spray painting, color washing, and decorative finishes. We use premium paints and modern techniques to achieve flawless results that enhance and protect your property.",
@@ -72,7 +108,7 @@ const Services = () => {
       id: 5,
       title: "Electrical Work",
       icon: "fas fa-bolt",
-      image: "/src/assets/Electrical Work.webp",
+      image: electricalWork,
       shortDesc: "Safe and reliable electrical installations and repairs",
       fullDesc:
         "Professional electrical services covering installations, repairs, and maintenance. Our certified electricians ensure all work meets safety standards and local regulations, providing reliable power solutions for your property.",
@@ -87,7 +123,7 @@ const Services = () => {
       id: 6,
       title: "Air Conditioning",
       icon: "fas fa-snowflake",
-      image: "/src/assets/Air Conditioning.png",
+      image: airConditioning,
       shortDesc: "AC installation, maintenance, and repair services",
       fullDesc:
         "Complete air conditioning services including installation, maintenance, and repairs. We work with all major brands and provide energy-efficient cooling solutions for residential and commercial properties.",
@@ -102,7 +138,7 @@ const Services = () => {
       id: 7,
       title: "Handyman Services",
       icon: "fas fa-tools",
-      image: "/src/assets/Handyman Services.jpeg",
+      image: handymanServices,
       shortDesc: "Comprehensive handyman services for all your needs",
       fullDesc:
         "Versatile handyman services covering a wide range of maintenance and repair tasks. From minor fixes to major improvements, our skilled professionals handle various projects with efficiency and attention to detail.",
@@ -117,7 +153,7 @@ const Services = () => {
       id: 8,
       title: "Project Management",
       icon: "fas fa-clipboard-list",
-      image: "/src/assets/Project Management.jpg",
+      image: projectManagement,
       shortDesc: "End-to-end project management and coordination",
       fullDesc:
         "Professional project management services ensuring your construction project runs smoothly from start to finish. We coordinate all aspects including scheduling, quality control, and budget management.",
@@ -138,14 +174,14 @@ const Services = () => {
       location: "Mirissa",
       progress: 85,
       images: [
-        "/src/assets/p11.jpg",
-        "/src/assets/p12.jpg",
-        "/src/assets/p13.jpg",
-        "/src/assets/p14.jpg",
-        "/src/assets/p15.jpg",
-        "/src/assets/p16.jpg",
-        "/src/assets/p17.jpg",
-        "/src/assets/p18.jpg",
+        p11,
+        p12,
+        p13,
+        p14,
+        p15,
+        p16,
+        p17,
+        p18,
       ],
       description:
         "A modern wellness space with calming design, natural finishes, smart lighting, and sustainable features set in tranquil landscaped surroundings.",
@@ -164,14 +200,14 @@ const Services = () => {
       location: "Mirissa",
       progress: 70,
       images: [
-        "/src/assets/p21.jpg",
-        "/src/assets/p22.jpg",
-        "/src/assets/p23.jpg",
-        "/src/assets/p24.jpg",
-        "/src/assets/p25.jpg",
-        "/src/assets/p26.jpg",
-        "/src/assets/p27.jpg",
-        "/src/assets/p28.jpg",
+        p21,
+        p22,
+        p23,
+        p24,
+        p25,
+        p26,
+        p27,
+        p28,
       ],
       description:
         "A three-story contemporary residence with refined finishes, smart home features, landscaped gardens, and sustainable energy solutions.",
@@ -190,12 +226,12 @@ const Services = () => {
       location: "Piliyandala",
       progress: 55,
       images: [
-        "/src/assets/p30.jpg",
-        "/src/assets/p31.jpg",
-        "/src/assets/p32.jpg",
-        "/src/assets/p33.jpg",
-        "/src/assets/p34.jpg",
-        "/src/assets/p35.jpg",
+        p30,
+        p31,
+        p32,
+        p33,
+        p34,
+        p35,
       ],
       description:
         "A full residential development in Piliyandala featuring modern design, quality finishes, landscaped spaces, and sustainable solutions.",
@@ -269,7 +305,7 @@ const Services = () => {
       >
         <div className="absolute inset-0">
           <motion.img
-            src="/src/assets/service.jpg"
+            src={serviceHero}
             alt="Satis-Fact Engineering Services - Professional Construction Team"
             className="w-full h-full object-cover"
             initial={{ scale: 1.2 }}
@@ -484,7 +520,7 @@ const Services = () => {
                     <motion.img
                       src={
                         project.images[currentImageIndex[project.id] || 0] ||
-                        "/src/assets/story.jpeg"
+                        storyFallback
                       }
                       alt={`${project.title} - Image ${
                         (currentImageIndex[project.id] || 0) + 1
@@ -493,7 +529,7 @@ const Services = () => {
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
                       onError={(e) => {
-                        e.target.src = "/src/assets/story.jpeg";
+                        e.target.src = storyFallback;
                       }}
                     />
 

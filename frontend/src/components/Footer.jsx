@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import footerLogo from "../assets/flogo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,7 +32,7 @@ const Footer = () => {
             </h4>
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/src/assets/flogo.jpg"
+                src={footerLogo}
                 alt="Satis-Fact Engineering Logo"
                 className="h-10 w-auto transition-transform duration-300 hover:scale-105"
               />

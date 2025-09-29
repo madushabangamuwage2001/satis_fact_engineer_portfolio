@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import bossImage from "../assets/boss.png";
 import person2 from "../assets/person2.png";
+import aboutUsImage from "../assets/aboutus.jpg";
+import storyImage from "../assets/story.jpeg";
 const About = () => {
   const values = [
     {
@@ -79,7 +81,7 @@ const About = () => {
       >
         <div className="absolute inset-0">
           <motion.img
-            src="/src/assets/aboutus.jpg"
+            src={aboutUsImage}
             alt="Satis-Fact Engineering - Professional Construction Services"
             className="w-full h-full object-cover"
             initial={{ scale: 1.2 }}
@@ -162,7 +164,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img
-                src="/src/assets/story.jpeg?height=500&width=600"
+                src={storyImage}
                 alt="Construction team at work"
                 className="w-full rounded-lg shadow-lg"
               />

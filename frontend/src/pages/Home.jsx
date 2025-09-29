@@ -1,12 +1,20 @@
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
+// Import assets
+import coverVideo from "../assets/cover-video.mp4";
+import luxuryResidential from "../assets/Luxury Residential Complex.jpg";
+import commercialBuilding from "../assets/Commercial Office Building.jpg";
+import industrialWarehouse from "../assets/Industrial Warehouse Facility.jpg";
+import heritageRestoration from "../assets/Heritage Building Restoration.webp";
+import companyDetails from "../assets/company-details.jpg";
+
 const Home = () => {
   const projects = [
     {
       id: 1,
       title: "Luxury Residential Complex",
-      image: "/src/assets/Luxury Residential Complex.jpg",
+      image: luxuryResidential,
       description:
         "Premium residential development featuring eco-friendly design and high-end finishes.",
       category: "Residential",
@@ -14,7 +22,7 @@ const Home = () => {
     {
       id: 2,
       title: "Commercial Office Building",
-      image: "/src/assets/Commercial Office Building.jpg",
+      image: commercialBuilding,
       description:
         "Cutting-edge office complex with smart technology and sustainable systems.",
       category: "Commercial",
@@ -22,7 +30,7 @@ const Home = () => {
     {
       id: 3,
       title: "Industrial Warehouse Facility",
-      image: "/src/assets/Industrial Warehouse Facility.jpg",
+      image: industrialWarehouse,
       description:
         "Advanced logistics hub with optimized storage and operational efficiency.",
       category: "Industrial",
@@ -30,7 +38,7 @@ const Home = () => {
     {
       id: 4,
       title: "Heritage Building Restoration",
-      image: "/src/assets/Heritage Building Restoration.webp",
+      image: heritageRestoration,
       description:
         "Meticulous restoration preserving historical architecture with modern upgrades.",
       category: "Restoration",
@@ -80,7 +88,7 @@ const Home = () => {
           className="absolute inset-0 w-full h-full object-cover opacity-90"
           poster="/placeholder.svg?height=1080&width=1920"
         >
-          <source src="/src/assets/cover-video.mp4" type="video/mp4" />
+          <source src={coverVideo} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>
 
@@ -327,7 +335,7 @@ const Home = () => {
             >
               <div className="relative">
                 <img
-                  src="/src/assets/company-details.jpg"
+                  src={companyDetails}
                   alt="Construction services showcase"
                   className="w-full rounded-xl shadow-lg"
                 />

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { initEmailJS, sendEmail } from "../services/emailService";
+import contactImage from "../assets/contact.jpg";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -106,7 +107,7 @@ const Contact = () => {
       >
         <div className="absolute inset-0">
           <motion.img
-            src="/src/assets/contact.jpg"
+            src={contactImage}
             alt="Satis-Fact Engineering Contact - Professional Construction Services"
             className="w-full h-full object-cover"
             initial={{ scale: 1.2 }}
