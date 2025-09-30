@@ -73,7 +73,7 @@ const Navbar = () => {
                 <img
                   src={smartimage}
                   alt="Smart Construction Badge"
-                  className="absolute top-[-16px] left-[5px] h-9 w-auto z-10 rounded-xl transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-1 drop-shadow-xl"
+                  className="absolute top-[-16px] left-[-5px] h-9 w-auto z-10 rounded-xl transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-1 drop-shadow-xl"
                 />
                 {/* <p
                   className={`text-sm italic font-medium tracking-widest transition-all duration-500 ease-in-out ${

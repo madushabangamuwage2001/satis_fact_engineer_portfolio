@@ -117,13 +117,14 @@ const Home = () => {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
-            className="mt-6 text-2xl sm:text-2xl lg:text-2xl xl:text-5xl font-extrabold leading-tight"
+            className="mt-5 text-2xl sm:text-2xl lg:text-2xl xl:text-5xl font-extrabold leading-tight"
           >
             <span className="block text-white drop-shadow-lg">
               Building Dreams
             </span>
-            <span className="block bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent h-20">
               Raising Standards
+              
             </span>
           </motion.h1>
 
@@ -131,7 +132,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
-            className="mt-9 text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto"
+            className="mt-5 text-lg sm:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto"
           >
             Delivering unparalleled construction and maintenance services with a
             commitment to quality and excellence.

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import footerLogo from "../assets/flogo.jpg";
+import smartimage from "../assets/smart2.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -37,18 +38,39 @@ const Footer = () => {
                 className="h-10 w-auto transition-transform duration-300 hover:scale-105"
               />
               <div>
-                <h5 className="text-lg font-bold text-yellow-400">Satis-Fact Engineering</h5>
-                <p className="text-yellow-300 text-base italic text-sm font-medium">Smart is Art</p>
+                <div className="relative">
+                  <h5 className="relative text-lg font-bold text-yellow-400 top-[-14px] ">
+                    Satis-Fact Engineering
+                  </h5>
+                  <img
+                    src={smartimage}
+                    alt="Smart Construction Badge"
+                    className="absolute top-[15px] right-[30px] h-7 w-auto z-10 rounded-xl transition-all duration-500 transform hover:scale-110 hover:rotate-1 drop-shadow-xl"
+                  />
+                </div>
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              Top-tier construction and engineering services in Sri Lanka, prioritizing quality and client satisfaction.
+              Top-tier construction and engineering services in Sri Lanka,
+              prioritizing quality and client satisfaction.
             </p>
             <div className="flex space-x-3">
               {[
-                { href: "https://facebook.com", icon: "fab fa-facebook-f", label: "Facebook" },
-                { href: "https://instagram.com", icon: "fab fa-instagram", label: "Instagram" },
-                { href: "https://linkedin.com", icon: "fab fa-linkedin-in", label: "LinkedIn" },
+                {
+                  href: "https://www.facebook.com/share/17RsYF1tFy/?mibextid=wwXIfr",
+                  icon: "fab fa-facebook-f",
+                  label: "Facebook",
+                },
+                {
+                  href: "https://instagram.com",
+                  icon: "fab fa-instagram",
+                  label: "Instagram",
+                },
+                {
+                  href: "https://linkedin.com",
+                  icon: "fab fa-linkedin-in",
+                  label: "LinkedIn",
+                },
               ].map(({ href, icon, label }) => (
                 <a
                   key={label}
@@ -77,7 +99,9 @@ const Footer = () => {
                     className="text-gray-300 hover:text-yellow-400 text-sm transition-all duration-300 flex items-center group"
                     onClick={() => window.scrollTo(0, 0)}
                   >
-                    <span className="mr-2 text-yellow-400 group-hover:transform group-hover:translate-x-1 transition-transform">›</span>
+                    <span className="mr-2 text-yellow-400 group-hover:transform group-hover:translate-x-1 transition-transform">
+                      ›
+                    </span>
                     {service}
                   </Link>
                 </li>
@@ -98,7 +122,9 @@ const Footer = () => {
                     className="text-gray-300 hover:text-yellow-400 text-sm transition-all duration-300 flex items-center group"
                     onClick={() => window.scrollTo(0, 0)}
                   >
-                    <span className="mr-2 text-yellow-400 group-hover:transform group-hover:translate-x-1 transition-transform">›</span>
+                    <span className="mr-2 text-yellow-400 group-hover:transform group-hover:translate-x-1 transition-transform">
+                      ›
+                    </span>
                     {link.label}
                   </Link>
                 </li>
@@ -115,13 +141,22 @@ const Footer = () => {
               {[
                 { icon: "fas fa-phone", text: "+94 763 115 305" },
                 { icon: "fas fa-phone", text: "+94 712 912 196" },
-                { icon: "fas fa-envelope", text: "asankaabeynayake@gmail.com", isEmail: true },
-                { icon: "fas fa-map-marker-alt", text: "Piliyandala/Matara, Sri Lanka" },
+                {
+                  icon: "fas fa-envelope",
+                  text: "asankaabeynayake@gmail.com",
+                  isEmail: true,
+                },
+                {
+                  icon: "fas fa-map-marker-alt",
+                  text: "Piliyandala/Matara, Sri Lanka",
+                },
               ].map(({ icon, text, isEmail }, index) => (
                 <p key={index} className="flex items-center group">
-                  <i className={`${icon} mr-2 text-yellow-400 group-hover:transform group-hover:rotate-12 transition-transform`}></i>
+                  <i
+                    className={`${icon} mr-2 text-yellow-400 group-hover:transform group-hover:rotate-12 transition-transform`}
+                  ></i>
                   {isEmail ? (
-                    <a 
+                    <a
                       href={`mailto:${text}`}
                       className="hover:text-yellow-400 transition-colors duration-300"
                     >
